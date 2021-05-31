@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabSix", "LabSix\LabSix.csproj", "{31ECB1F9-35EA-4105-A3C7-B180759ECDB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabSixQuestionTwo", "LabSixQuestionTwo\LabSixQuestionTwo.csproj", "{84EEDACB-7395-485D-81F8-F538E7ADB69B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31ECB1F9-35EA-4105-A3C7-B180759ECDB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31ECB1F9-35EA-4105-A3C7-B180759ECDB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31ECB1F9-35EA-4105-A3C7-B180759ECDB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31ECB1F9-35EA-4105-A3C7-B180759ECDB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84EEDACB-7395-485D-81F8-F538E7ADB69B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84EEDACB-7395-485D-81F8-F538E7ADB69B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84EEDACB-7395-485D-81F8-F538E7ADB69B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84EEDACB-7395-485D-81F8-F538E7ADB69B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B116339B-1AD0-4450-BAFF-DCEC37242CA3}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,19 @@
+﻿<Window x:Class="LabNine.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LabNine"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="AntiqueWhite">
+        <ListBox x:Name="lstbxMembers" HorizontalAlignment="Left" Height="281" Margin="10,129,0,0"  VerticalAlignment="Top" Width="326" SelectionChanged="LstbxMembers_SelectionChanged" ItemsSource="{Binding}"/>
+        <ComboBox x:Name="cmbbxFilterMembers" HorizontalAlignment="Left" Margin="184,88,0,0" VerticalAlignment="Top" Width="152" Height="26" SelectionChanged="CmbbxFilterMembers_SelectionChanged"/>
+        <Label x:Name="lblFiltermembers" Content="Member Type:" HorizontalAlignment="Left" Margin="94,88,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txtbkMemberInfo" HorizontalAlignment="Left" Margin="363,129,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="271" Width="411" Background="White"/>
+        <TextBox x:Name="txtbxNameSearch" HorizontalAlignment="Left" Height="26" Margin="363,88,0,0" TextWrapping="Wrap" Text="Search by Name" VerticalAlignment="Top" Width="187" FontSize="14"/>
+        <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Left" Margin="555,88,0,0" VerticalAlignment="Top" Width="79" Height="26" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="154,10,0,0" TextWrapping="Wrap" Text="Member Information" VerticalAlignment="Top" TextAlignment="Center" FontSize="48" Height="52" Width="480"/>
+
+    </Grid>
+</Window>

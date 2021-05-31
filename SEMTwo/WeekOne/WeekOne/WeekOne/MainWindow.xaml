@@ -1,0 +1,23 @@
+﻿<Window x:Class="WeekOne.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeekOne"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="AntiqueWhite">
+    <Grid>
+        <Label x:Name="lblBands" Content="Bands" HorizontalAlignment="Left" Margin="37,28,0,0" VerticalAlignment="Top" Height="44" Width="80" FontSize="24"/>
+        <ListBox x:Name="lstBxBands" HorizontalAlignment="Left" Height="272" Margin="37,115,0,0" VerticalAlignment="Top" Width="369" SelectionChanged="LstBxBands_SelectionChanged"/>
+
+        <Label x:Name="lblGenre" Content="Genre:" HorizontalAlignment="Left" Margin="37,77,0,0" VerticalAlignment="Top" Height="33" Width="66" FontSize="18"/>
+        <ComboBox x:Name="cmbBxGenre" HorizontalAlignment="Left" Margin="108,77,0,0" VerticalAlignment="Top" Width="298" Height="33"  DropDownClosed="CmbBxGenre_DropDownClosed"/>
+
+        <Label x:Name="lblBandInfo" Content="Band Information" HorizontalAlignment="Left" Margin="434,66,0,0" VerticalAlignment="Top" Height="44" Width="341" FontSize="24"/>
+        <ListBox x:Name="lstBxAlbums" HorizontalAlignment="Left" Height="129" Margin="434,249,0,0" VerticalAlignment="Top" Width="341"/>
+        <Label x:Name="lblAlbums" Content="Albums" HorizontalAlignment="Left" Margin="434,214,0,0" VerticalAlignment="Top" Height="35" Width="119" FontSize="22"/>
+        <TextBlock x:Name="txbkBandInfo" HorizontalAlignment="Left" Margin="434,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="99" Width="341"/>
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="663,383,0,0" VerticalAlignment="Top" Width="112" Height="27" Click="BtnSave_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,43 @@
+﻿<Window x:Class="FoopProjectS001777754.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FoopProjectS001777754"
+        mc:Ignorable="d"
+        Title="Let's Cook!" Height="720" Width="1080" Background="White" Icon="Images/ChefsHat.ico" 
+        ResizeMode="NoResize"
+        >
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="119*"/>
+            <RowDefinition Height="121*"/>
+            <RowDefinition Height="121*"/>
+            <RowDefinition Height="330*"/>
+        </Grid.RowDefinitions>
+
+        <Image Source="Images\CheckerPattern.png" Stretch="Fill" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="6" Grid.RowSpan="4" Margin="0,0,-0.133,0.4"/>
+
+        <!-- Navbar ########################################################## -->
+        <Image Source="Images\MenuBar.png" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="6" Margin="50,20,9.867,19.2" Stretch="Fill"/>
+        <Image Source="Images\LetsCookLogo@4x.png" Grid.Column="0" Grid.Row="0" Margin="5,5,4.933,4.2"/>
+        <TextBlock Name="txblkTimer" Grid.Column="5" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Width="120" FontWeight="Bold" Foreground="White" FontSize="24" Margin="29.067,44,29.867,43.2" Height="32"/>
+
+        <TextBlock Name="TxBlkCookingMode" MouseDown="TxBlkCookingMode_MouseDown" Grid.Column="1" Grid.Row="0" Text="Cooking Mode" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontWeight="Bold" FontSize="20" Margin="11.8,44,10.4,43.2" Height="32" Width="157"/>
+        <TextBlock Name="TxBlkRecipeBinder" MouseDown="TxBlkRecipeBinder_MouseDown" Grid.Column="2" Grid.Row="0" Text="Recipe Binder" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontWeight="Bold" FontSize="20" Margin="11.8,44,10.4,43.2" Height="32" Width="157"/>
+        <TextBlock Name="TxBlkShoppingList" MouseDown="TxBlkShoppingList_MouseDown" Grid.Column="3" Grid.Row="0" Text="Shopping List" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontWeight="Bold" FontSize="20" Margin="11.8,44,10.4,43.2" Height="32" Width="157"/>
+        <TextBlock Name="TxBlkMealPlanner" MouseDown="TxBlkMealPlanner_MouseDown" Grid.Column="4" Grid.Row="0" Text="Meal Planner" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontWeight="Bold" FontSize="20" Margin="11.8,44,10.4,43.2" Height="32" Width="157"/>
+
+
+        <Frame Name="mainFrame" Grid.Column="0" Grid.Row="1" Source="CookingMode.xaml" NavigationUIVisibility="Hidden" Grid.RowSpan="3" Grid.ColumnSpan="6"/>
+
+    </Grid>
+</Window>

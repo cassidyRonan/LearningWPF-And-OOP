@@ -1,0 +1,38 @@
+﻿<Window x:Class="ExerciseFive.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExerciseFive"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="264.8"/>
+            <ColumnDefinition Width="283.2"/>
+            <ColumnDefinition Width="245.6"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="11*"/>
+        </Grid.RowDefinitions>
+        <Image Name="RockImage" Source="Images/RockIcon.png" Height="64" Width="64" Grid.Column="0" Grid.Row="0"  HorizontalAlignment="Left" Margin="60,0,10,0"/>
+        <RadioButton Name="rdBtnRock" Content="Rock" GroupName="MusicFilter" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" Margin="0,50,80,20" FontSize="15"/>
+
+        <Image Name="PopImage" Source="Images/PopIcon.png" Height="64" Width="64" Grid.Column="1" Grid.Row="0"  HorizontalAlignment="Left" Margin="80,0,10,0"/>
+        <RadioButton Name="rdBtnPop" Content="Pop" GroupName="MusicFilter" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Right" Margin="0,50,90,20" FontSize="15"/>
+
+        <Image Name="discoImage" Source="Images/DiscoIcon.png" Height="64" Width="64" Grid.Column="2" Grid.Row="0"  HorizontalAlignment="Left" Margin="50,0,10,0"/>
+        <RadioButton Name="rdBtnDisco" Content="Disco" GroupName="MusicFilter" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Right" Margin="0,50,70,20" FontSize="15"/>
+        
+        <StackPanel Name="Buttons" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"  Margin="282.49,0,-0.4,0" >
+            <Button Name="Button1" Content="Button 1" Margin="12" Height="50" Width="150" />
+            <Button Name="Button2" Content="Button 1" Margin="12" Height="50" Width="150"/>
+            <Button Name="Button3" Content="Button 1" Margin="12" Height="50" Width="150"/>
+            <Button Name="Button4" Content="Button 1" Margin="12" Height="50" Width="150"/>
+        </StackPanel>
+        <ListBox Name="lstBxSongs" Grid.Row="1" Grid.Column="0" Margin="10,10,10.2,10" Background="AliceBlue" Grid.ColumnSpan="2" Grid.RowSpan="2">
+
+        </ListBox>
+    </Grid>
+</Window>
